@@ -23,11 +23,11 @@ Data::ESN - Manipulate mobile ESN values
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 =head1 SYNOPSIS
@@ -64,7 +64,7 @@ Perhaps a little code snippet.
 
 =head2 esn_to_hex
 
-Converts a Decimal ESN to Hex.  If an invalid ESN is used, then it will throw
+Converts a Decimal ESN to Hex.  If an invalid ESN is used, it will throw
 a warning and return to 0.
 
 =cut
@@ -90,7 +90,7 @@ sub esn_to_hex {
 
 =head2 esn_to_dec
 
-Convert a Hex ESN to Decimal.  If an invalid Hex ESN is used, then it will throw
+Convert a Hex ESN to Decimal.  If an invalid Hex ESN is used, it will throw
 a warning and return 0. 
 
 =cut
@@ -134,7 +134,7 @@ sub esn_valid {
 
 =head2 esn_is_hex
 
-If ESN appears to be Hex, return 1, else return 0.  A valid hex ESN is 8 digits
+If ESN appears to be Hex, return 1, else return 0.  A valid Hex ESN is 8 digits
 in length, 00000000 to FFFFFFFF inclusive.
 
 =cut
